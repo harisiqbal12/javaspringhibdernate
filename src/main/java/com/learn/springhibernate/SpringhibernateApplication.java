@@ -20,7 +20,8 @@ public class SpringhibernateApplication {
 	@Bean
 	CommandLineRunner commandLineRunner(StudentDAO studentDAO) {
 		return runner -> {
-			deleteStudent(studentDAO);
+			// deleteStudent(studentDAO);
+			createStudent(studentDAO);
 		};
 	}
 
@@ -97,6 +98,8 @@ public class SpringhibernateApplication {
 
 		Student student = new Student("Haris", "Ansari", "harisansari@gmail.com");
 		studentDAO.save(student);
+
+		
 
 		long stopTime = System.currentTimeMillis();
 

@@ -16,6 +16,8 @@ public class Student {
   @Column(name = "id")
   private int id;
 
+  public String test;
+
   @Column(name = "first_name")
   private String firstName;
 
@@ -65,6 +67,14 @@ public class Student {
 
   public void setEmail(String email) {
     this.email = email;
+  }
+
+  public void getData() {
+
+  }
+
+  public void getData(String param) {
+
   }
 
   @Override
